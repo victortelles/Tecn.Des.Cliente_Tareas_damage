@@ -1,0 +1,72 @@
+//Estilos HTML
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $size-fuente-base;
+    line-height: $altura-linea-base;
+    background-color: $color-fondo-principal;
+    color: $color-principal;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: $ancho-maximo;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+}
+
+//header
+.header {
+    align-items: center;
+}
+
+//Perfil
+.profile {
+    @include flex-center;
+    gap: 20px;
+    img {
+        border-radius: 50%;
+        border: 2px solid $color-acento;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+//Informacion contacto
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+//Exp laboral
+.experience .job {
+    margin-bottom: 20px;
+}
+
+//Habilidades
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+
+    li {
+        background-color: $color-acento;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+//Pie de pagina
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: calc($size-fuente-base - 2px);
+    color: $color-secundario;
+}

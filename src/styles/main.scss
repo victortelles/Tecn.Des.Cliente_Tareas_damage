@@ -1,7 +1,4 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    color: blue;
-}
+@import 'variables';
+@import 'mixins';
+@import 'partials';
+@import 'responsive';

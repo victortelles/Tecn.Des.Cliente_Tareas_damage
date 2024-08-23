@@ -1,0 +1,25 @@
+//Responsivo
+@include breakpoint(tablet) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info ul {
+        li {
+            font-size: calc($size-fuente-base + 2px);
+        }
+    }
+}
+
+@include breakpoint(movil) {
+    .profile img {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
